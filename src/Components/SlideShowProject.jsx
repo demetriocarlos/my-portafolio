@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 export const SlideShowProject = ({project}) => {
     const [index, setIndex] = useState(0 )
+
   return (
     <> 
       <div 
@@ -32,11 +33,9 @@ export const SlideShowProject = ({project}) => {
 
 
       <button 
-        onClick={() => setIndex(prev => {
-          const newIndexes = [...prev];
-          newIndexes[project.id] = (newIndexes[project.id] -1 + project.images.length ) % project.images.length;                       
-          return newIndexes
-        })}                      
+       onClick={() =>
+            setIndex((index - 1 +  project.images.length) %  project.images.length)
+          }                      
         className="bg-opacity-40 absolute top-1/2 left-4 transform -translate-y-1/2  bg-gray-700 text-white px-2 py-1  rounded-md z-20"
       >
         <IoIosArrowBack />       

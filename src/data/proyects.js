@@ -9,20 +9,213 @@ import {
   SiReactquery,
   SiAxios,
   SiTailwindcss,
-  SiJest
+  SiJest,
+  SiPassport,
+  SiCloudinary
 } from "react-icons/si";
 
  
 
 import { MdDeviceHub } from 'react-icons/md'
-import { FaRegClock } from 'react-icons/fa'
-
- 
-
-export const projects = [
-
+import { FaRegClock , FaGithub} from 'react-icons/fa'
    
+
+export const projects = [  
+
+  {   
+    id:3,
+    title:"Porfolio Managemen",
+    description:"Aplicación fullstack tipo 'GitHub social' que permite a desarrolladores crear perfiles profesionales, mostrar sus proyectos y descubrir el trabajo de otros. Los usuarios pueden autenticarse con email o GitHub, gestionar su portafolio completo con imágenes y tecnologías, dar favoritos a proyectos, contactar a otros desarrolladores y explorar proyectos . Incluye sistema completo de recuperación de contraseñas y diseño 100% responsivo",
+    tech:[
+      { 
+        id:1,
+        name: "Node.js",
+        icon:  FaNodeJs,  
+        color: "#339933",
+      },
+      {
+        id:2,
+        name: "Express",
+        icon: SiExpress,
+        color: "#000000",
+      },
+      {
+        id:3,
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "#47A248",
+      },
+      {
+        id:4,
+        name: "Mongoose",
+        icon: SiMongoose,
+        color: "#880000",
+      },
+      {
+        id:5,
+        name: "JWT",
+        icon: SiJsonwebtokens,
+        color: "#000000",
+      },
+      //
+       {
+      id: 69,
+      name: "Passport.js",
+      icon: SiPassport ,
+      color: "#34E27A",
+       
+    },
+    {
+      id: 77,
+      name: "GitHub OAuth",
+      icon: FaGithub,
+      color: "#181717",
+       
+    },
+
+    {
+      id: 92,
+      name: "Cloudinary",
+      icon:   SiCloudinary,
+      color: "#3448C5",
+       
+    },
     
+    //
+      {
+        id: 1007,
+        name: "Jest",
+        icon:  SiJest ,  
+        color: "#C21325",
+      },
+      {
+        id: 1008,
+        name: "Supertest",
+        icon:  FaFlask,  
+        color: "#222222",
+      },
+       
+
+      {
+        id:6,
+        name: "React",
+        icon: FaReact,
+        color: "#61DAFB",
+      },
+      {
+        id:7,
+        name: "React Router",
+        icon: SiReactrouter,
+        color: "#CA4245",
+      },
+      {
+        id:8,
+        name: "React Query",
+        icon: SiReactquery,
+        color: "#FF4154",
+      },
+      {
+        id:9,
+        name: "Axios",
+        icon: SiAxios,
+        color: "#5A29E4",
+      },
+      {
+        id:10,
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+        color: "#06B6D4",
+      },
+    ],
+    link:"https://porfolio-management-ebon.vercel.app/",
+    images:[
+      {
+        id:1, 
+        url:"/imgPorfolio/porfolio-preview1.png",
+        descripcion: ""
+      },
+      {
+        id:2, 
+        url:"/imgPorfolio/porfolio-preview2.png",
+        descripcion: ""
+      },
+      {
+        id:3, 
+        url:"/imgPorfolio/porfolio-preview3.png",
+        descripcion: ""
+      },
+      {
+        id:4, 
+        url:"/imgPorfolio/porfolio-preview4.png",
+        descripcion: ""
+      },
+      {
+        id:5, 
+        url:"/imgPorfolio/porfolio-preview5.png",
+        descripcion: ""
+      },
+      {
+        id:6, 
+        url:"/imgPorfolio/porfolio-preview6.png",
+        descripcion: ""
+      },
+      {
+        id:7, 
+        url:"/imgPorfolio/porfolio-preview7.png",
+        descripcion: ""
+      },
+      {
+        id:8, 
+        url:"/imgPorfolio/porfolio-preview8.png",
+        descripcion: ""
+      },
+      {
+        id:9, 
+        url:"/imgPorfolio/porfolio-preview9.png",
+        descripcion: ""
+      },
+      {
+        id:10, 
+        url:"/imgPorfolio/porfolio-preview10.png",
+        descripcion: ""
+      },
+      {
+        id:11, 
+        url:"/imgPorfolio/porfolio-preview11.png",
+        descripcion: ""
+      },
+      {
+        id:12, 
+        url:"/imgPorfolio/porfolio-preview12.png",
+        descripcion: ""
+      },
+      {
+        id:13, 
+        url:"/imgPorfolio/porfolio-preview13.png",
+        descripcion: ""
+      },
+      {
+        id:14, 
+        url:"/imgPorfolio/porfolio-preview14.png",
+        descripcion: ""
+      },
+    ],
+    order:3,
+    repositorios:[
+      {
+        name:"Backend",
+        githubUrl:"https://github.com/demetriocarlos/Portfolio_Management_backend"
+      },
+      {
+        name:"Frontend",
+        githubUrl:"https://github.com/demetriocarlos/porfolio_management_frontend"
+      }
+    ]
+  }, 
+    
+
+
+
   {
     id:2,
     title:"Task Master",
