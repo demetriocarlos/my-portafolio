@@ -16,7 +16,7 @@ export const ImgDetails = () => {
  return (
      <>  
                                                         {/**min-h-screen: hace que el contenedor tenga al menos el alto de la pantalla. */} 
-  <div className="flex items-center justify-center  min-h-screen bg-gray-100 px-4">
+  <div className="flex items-center justify-center  min-h-screen bg-gray-900 px-4">
                                                    {/**aspect-video: asegura que el contenedor mantenga relación 16:9, en cualquier pantalla. */}
     <div className="relative w-full max-w-[900px] aspect-video overflow-hidden rounded-xl shadow-lg">
       {/* Carrusel de imágenes */}
@@ -30,7 +30,8 @@ export const ImgDetails = () => {
             key={image.id}
             src={image.url}
             alt={image.descripcion}
-            className="w-full h-full object-cover flex-shrink-0"
+            //object-cover flex-shrink-0
+            className="w-full h-full flex-shrink-0"
           />
         ))}
       </div>

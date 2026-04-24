@@ -14,13 +14,180 @@ import {
   SiCloudinary
 } from "react-icons/si";
 
- 
+import { SiReplicate } from "react-icons/si";
 
 import { MdDeviceHub } from 'react-icons/md'
 import { FaRegClock , FaGithub} from 'react-icons/fa'
    
 
 export const projects = [  
+
+   {   
+    id:4,
+    title:"IA Image Generator",
+    description:"Aplicación web de generación de imágenes con IA que permite a los usuarios crear, explorar y organizar imágenes dentro de una comunidad. Incluye autenticación tradicional y con GitHub, generación de imágenes mediante prompts personalizables, feed público de la comunidad, colecciones privadas y gestión completa del historial de creaciones.",
+    tech:[
+      { 
+        id:1,
+        name: "Node.js",
+        icon:  FaNodeJs,  
+        color: "#339933",
+      },
+      {
+        id:2,
+        name: "Express",
+        icon: SiExpress,
+        color: "#000000",
+      },
+      {
+        id:3,
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "#47A248",
+      },
+      {
+        id:4,
+        name: "Mongoose",
+        icon: SiMongoose,
+        color: "#880000",
+      },
+      {
+        id:5,
+        name: "JWT",
+        icon: SiJsonwebtokens,
+        color: "#000000",
+      },
+      //
+       {
+      id: 69,
+      name: "REPLICATE",
+      icon: SiReplicate ,
+      color: "#B332B0",  
+       
+    },
+    {
+      id: 77,
+      name: "GitHub OAuth",
+      icon: FaGithub,
+      color: "#181717",
+       
+    },
+
+    {
+      id: 92,
+      name: "Cloudinary",
+      icon:   SiCloudinary,
+      color: "#3448C5",
+       
+    },
+    
+    //
+      {
+        id: 1007,
+        name: "Jest",
+        icon:  SiJest ,  
+        color: "#C21325",
+      },
+      {
+        id: 1008,
+        name: "Supertest",
+        icon:  FaFlask,  
+        color: "#222222",
+      },
+       
+
+      {
+        id:6,
+        name: "React",
+        icon: FaReact,
+        color: "#61DAFB",
+      },
+      {
+        id:7,
+        name: "React Router",
+        icon: SiReactrouter,
+        color: "#CA4245",
+      },
+      {
+        id:8,
+        name: "React Query",
+        icon: SiReactquery,
+        color: "#FF4154",
+      },
+      {
+        id:9,
+        name: "Axios",
+        icon: SiAxios,
+        color: "#5A29E4",
+      },
+      {
+        id:10,
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+        color: "#06B6D4",
+      },
+    ],
+    link:"https://ai-image-generator-five-gamma.vercel.app",
+    images:[
+      {
+        id:1, 
+        url:"/IAImageGenerator/IAImage-preview1.png",
+        descripcion: ""
+      },
+      {
+        id:2, 
+        url:"/IAImageGenerator/IAImage-preview2.png",
+        descripcion: ""
+      },
+      {
+        id:3, 
+        url:"/IAImageGenerator/IAImage-preview3.png",
+        descripcion: ""
+      },
+      {
+        id:4, 
+        url:"/IAImageGenerator/IAImage-preview4.png",
+        descripcion: ""
+      },
+      {
+        id:5, 
+        url:"/IAImageGenerator/IAImage-preview5.png",
+        descripcion: ""
+      },
+      {
+        id:6, 
+        url:"/IAImageGenerator/IAImage-preview6.png",
+        descripcion: ""
+      },
+      {
+        id:7, 
+        url:"/IAImageGenerator/IAImage-preview7.png",
+        descripcion: ""
+      },
+      {
+        id:8, 
+        url:"/IAImageGenerator/IAImage-preview8.png",
+        descripcion: ""
+      },
+      
+       
+       
+    ],
+    order:4,
+    repositorios:[
+      {
+        name:"Backend",
+        githubUrl:"https://github.com/demetriocarlos/ai-image-generator-backend"
+      },
+      {
+        name:"Frontend",
+        githubUrl:"https://github.com/demetriocarlos/ai-image-generator-frontend"
+      }
+    ]
+  },
+
+
+
 
   {   
     id:3,
@@ -213,7 +380,6 @@ export const projects = [
     ]
   }, 
     
-
 
 
   {

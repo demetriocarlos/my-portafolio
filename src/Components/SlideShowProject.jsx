@@ -8,7 +8,7 @@ export const SlideShowProject = ({project}) => {
     const [index, setIndex] = useState(0 )
 
   return (
-    <> 
+    <div className="relative w-full h-full overflow-hidden"> 
       <div 
           className="flex transition-transform duration-700 h-full"
           style={{ transform: `translateX(-${index * 100}%)` }}
@@ -19,7 +19,8 @@ export const SlideShowProject = ({project}) => {
                 key={image.id}
                 src={image.url} 
                 alt=""
-                className=" w-full h-full object-cover  flex-shrink-0   " 
+                      //object-cover
+                className=" w-full h-full   " 
                 />
             ))}
       </div>
@@ -48,6 +49,7 @@ export const SlideShowProject = ({project}) => {
       >
         <IoIosArrowForward />
       </button>
-    </>
+
+    </div>
   )
 }
